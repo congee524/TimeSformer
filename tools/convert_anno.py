@@ -8,7 +8,7 @@ def convert_anno(mode):
         lines = f.readlines()
         for line in lines:
             label, total_frames, class_id = line.split(' ')
-            res_lines.append(label + ',' + class_id)
+            res_lines.append(label + ' ' + class_id)
     
     with open(tar_fname, 'w') as f:
         for res in res_lines:

@@ -21,7 +21,7 @@ srun -p ${PARTITION} \
     --kill-on-bad-exit=1 \
     ${SRUN_ARGS} \
     python tools/run_net.py \
-        --cfg configs/Kinetics/TimeSformer_divST_8x32_224.yaml \
+        --cfg ${CONFIG} \
         DATA.PATH_TO_DATA_DIR data/kinetics400 \
         NUM_GPUS 8 \
         TRAIN.BATCH_SIZE 8 \
