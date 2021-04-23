@@ -7,7 +7,7 @@ TRAIN:
   AUTO_RESUME: True
 DATA:
   PATH_TO_DATA_DIR: data/kinetics400
-  PATH_PREFIX: data/kinetics400/rawframes
+  PATH_PREFIX: data/kinetics400/videos
   NUM_FRAMES: 96
   SAMPLING_RATE: 4
   TRAIN_JITTER_SCALES: [256, 320]
